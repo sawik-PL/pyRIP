@@ -106,6 +106,7 @@ class RipPacket(object):
         packet = header + entries
         return packet
 
+    @staticmethod
     def unpack(data):
         pkt = RipPacket()
         hdr = data[:RIP_HEADER_SIZE]
